@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <titile>
+            login Page
+        </titile>
+        <body>
+            <style>
+                body{
+                    background-color: rgb(114, 77, 141);
+                    text-align: center;
+                    
+                    font-size: larger;
+                }
+                
+            </style>
+          <h2>login from</h2>  
+          <label>user name</label>
+          <input type ="text" id="user name"><br><br>
+          <lable> password:</lable> 
+          <input type ="password"id="password"><br><br>
+          <button on click="login()"> login</button>
+          <P id ="msg"></P>
+          <script>
+            function login(){
+var user=document.getElementById("username").value;
+var pass=document.getElementById("password").value;
+
+var user=document.getElementById("msg").value;
+if(user=== "admin" && pass === "1234"){
+    msg.style.color="green";
+    msg.innerHTML="login successfull";
+
+}else{
+    msg.style.color="red";
+    msg.innerHTML="invalid user name or password";
+}}
+    
+          </script>
+
+            
+        </body>
+    </head>
+</html>
